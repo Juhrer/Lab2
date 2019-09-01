@@ -22,7 +22,7 @@ public class Saude {
 	 * @param valor o status da sa�de mental do aluno
 	 */
 	public void defineSaudeMental(String valor) {
-		SaudeMental = valor;
+		saudeMental = valor;
 	}
 	/**
 	 * Status cadastrado da sa�de f�sica do aluno.
@@ -30,7 +30,7 @@ public class Saude {
 	 * @param valor o status da sa�de f�sica do aluno
 	 */
 	public void defineSaudeFisica(String valor) {
-		SaudeFisica = valor;
+		saudeFisica = valor;
 	}
 	/**
 	 * Retorna o status geral da sa�de do aluno, baseado na sua sa�de f�sica e mental.
@@ -38,9 +38,9 @@ public class Saude {
 	 * @return o status da sa�de geral do aluno.
 	 */
 	public String getStatusGeral() {
-		if(SaudeMental == "boa" && SaudeFisica == "boa") {
+		if(saudeMental == "boa" && saudeFisica == "boa") {
 			return "boa";
-		} else if(SaudeMental == "boa" || SaudeFisica == "boa") {
+		} else if(saudeMental == "boa" || saudeFisica == "boa") {
 			return "ok";
 		} else {
 			return "fraca";
