@@ -1,7 +1,7 @@
 package lab2;
 
 /**
- * Representa��o de uma conta de cantina.
+ * Representação de uma conta de cantina.
  * Toda conta de cantina precisa de um nome.
  * 
  * @author Lucas Alves Vigolvino
@@ -24,7 +24,7 @@ public class ContaCantina {
 	 */
 	private int débito = 0;
 	/**
-	 * Costr�i uma conta de cantina a partir do seu nome.
+	 * Costrói uma conta de cantina a partir do seu nome.
 	 * 
 	 * @param nomeDaCantina o nome da cantina
 	 */
@@ -43,7 +43,7 @@ public class ContaCantina {
 		this.debito += valorCentavos;
 	}
 	/**
-	 * Adiciona o valor pago na vari�vel pago.
+	 * Adiciona o valor pago na variável pago.
 	 * 
 	 * @param valorCentavos o valor da conta pago
 	 */
@@ -60,9 +60,9 @@ public class ContaCantina {
 	}
 	/**
 	 * Retorna a String que representa uma conta de cantina.
-	 * A representa��o segue o formato "Nome da Cantina Quantidade " + "Total de Itens Valor " + "Total"
+	 * A representação segue o formato "Nome da Cantina Quantidade " + "Total de Itens Valor " + "Total"
 	 * 
-	 * @return a representa��o em String de uma conta de cantina.
+	 * @return a representação em String de uma conta de cantina.
 	 */
 	@Override
 	public String toString() {
