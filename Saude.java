@@ -1,41 +1,41 @@
 package lab2;
 
 /**
- * Representaa��o da sa�de geral de um estudante.
+ * Representaação da saúde geral de um estudante.
  * 
  * @author Lucas Alves Vigolvino
  */
 public class Saude {
 	/**
-	 * Sa�de mental do aluno.
-	 * Por padr�o, boa.
+	 * Saúde mental do aluno.
+	 * Por padrão, boa.
 	 */
 	private String saudeMental = "boa";
 	/**
-	 * Sa�de f�sica do aluno.
-	 * Por padr�o, boa.
+	 * Saúde física do aluno.
+	 * Por padrão, boa.
 	 */
 	private String saudeFisica = "boa";
 	/**
-	 * Status cadastrado da sa�de mental do aluno.
+	 * Status cadastrado da saúde mental do aluno.
 	 * 
-	 * @param valor o status da sa�de mental do aluno
+	 * @param valor o status da saúde mental do aluno
 	 */
 	public void defineSaudeMental(String valor) {
 		saudeMental = valor;
 	}
 	/**
-	 * Status cadastrado da sa�de f�sica do aluno.
+	 * Status cadastrado da saúde física do aluno.
 	 * 
-	 * @param valor o status da sa�de f�sica do aluno
+	 * @param valor o status da saúde física do aluno
 	 */
 	public void defineSaudeFisica(String valor) {
 		saudeFisica = valor;
 	}
 	/**
-	 * Retorna o status geral da sa�de do aluno, baseado na sua sa�de f�sica e mental.
+	 * Retorna o status geral da saúde do aluno, baseado na sua saúde física e mental.
 	 * 
-	 * @return o status da sa�de geral do aluno.
+	 * @return o status da saúde geral do aluno.
 	 */
 	public String getStatusGeral() {
 		if(saudeMental == "boa" && saudeFisica == "boa") {
