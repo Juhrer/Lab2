@@ -16,16 +16,13 @@ public class ContaCantina {
 	 */
 	private int qtsItens;
 	/** 
-	 * */
-	private int valorCentavos;
-	/**
 	 * Valor total da conta, em centavos.
 	 */
-	private int totalGasto = 0;
+	private int total;
 	/**
-	 * Valor pago da conta.
+	 * Valor que falta pagar da conta, em centavos.
 	 */
-	private int pago = 0;
+	private int débito = 0;
 	/**
 	 * Costr�i uma conta de cantina a partir do seu nome.
 	 * 
@@ -42,7 +39,7 @@ public class ContaCantina {
 	 */
 	public void cadastraLanche(int qtdItens, int valorCentavos) {
 		this.qtsItens += qtdItens;
-		this.valorCentavos += valorCentavos;
+		this.total += valorCentavos;
 		this.debito += valorCentavos;
 	}
 	/**
@@ -69,6 +66,6 @@ public class ContaCantina {
 	 */
 	@Override
 	public String toString() {
-		return nomeDaCantina + " " + itensTotal + " " + total;
+		return nomeDaCantina + " " + qtsItens + " " + total;
 	}
 }
